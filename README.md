@@ -3,6 +3,7 @@
 🌟 Overview
 
 Online Diary is a fully responsive and secure web application that allows users to write and store personal diary entries online with authentication and data protection mechanisms.
+This website is hosted online and alsoo have SSL Certificate. LINK:http://onlinediary.great-site.net
 
 🚀 Features
 
@@ -22,17 +23,13 @@ Frontend: HTML, CSS, JavaScript, Bootstrap
 
 Backend: PHP
 
-Database: (Optional: Mention MySQL or any database you use)
-
-📷 Screenshots (Optional)
-
-Include some screenshots of your app to showcase its UI.
+Database: MySQL 
 
 🏗️ Installation & Setup
 
 Clone the repository:
 
-git clone https://github.com/your-username/online-diary.git
+git clone https://github.com/nishantmandil/Online-Diary.git
 
 Navigate to the project directory:
 
