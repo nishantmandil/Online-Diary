@@ -1,0 +1,470 @@
+.loader_bg{
+    position: fixed;
+    z-index: 999999;
+    background: rgb(20, 20, 20);
+    width: 100%;
+    height: 100%;
+}
+.loader{
+    border: 0 solid transparent;
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    position: absolute;
+    top: calc(50vh - 75px);
+    left: calc(50vw - 75px);
+}
+.loader:before, .loader:after{
+    content: '';
+    border: 1em solid #ff5733;
+    border-radius: 50%;
+    width: inherit;
+    height: inherit;
+    position: absolute;
+    top: 0;
+    left: 0;
+    animation: loader 2s linear infinite;
+    opacity: 0;
+}
+.loader:before{
+    animation-delay: .5s;
+}
+@keyframes loader{
+    0%{
+        transform: scale(0);
+        opacity: 0;
+    }
+    50%{
+        opacity: 1;
+    }
+    100%{
+        transform: scale(1);
+        opacity: 0;
+    }
+}
+
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+.body{
+    text-align: center;
+}
+  
+html {
+  scroll-behavior: smooth;
+}
+.mycontainer{
+    background: url(../image/dark_planet_5k-5120x2880.jpg) no-repeat center center fixed;
+    background-size: cover;
+}
+
+.home{
+    
+    width: 100%;
+    height: 650px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 500px;
+}
+#heading{
+    margin-bottom: 50px;
+}
+#heading h1{
+    color: white;
+    font-size: 60px;
+    text-align: center;
+    font-family: cursive;
+}
+#para{
+    margin-bottom: 30px;
+}
+#para p{
+    color: white;
+    font-size: 20px;
+    text-align: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.bubbles img{
+    width: 30px;
+    animation: bubble 7s linear infinite;
+}
+.bubbles{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    position: absolute;
+    bottom: -100px;
+}
+@keyframes bubble{
+    0%{
+        transform: translateY(0);
+        opacity: 0;
+    }
+    50%{
+        opacity: 1;
+    }
+    70%{
+        opacity: 1;
+    }
+    100%{
+        transform: translateY(-80vh);
+        opacity: 0;
+    }
+
+}
+
+.bubbles img:nth-child(1){
+    animation-delay: 2s;
+    width: 25px;
+}
+.bubbles img:nth-child(2){
+    animation-delay: 10s;
+    width: 25px;
+}
+.bubbles img:nth-child(3){
+    animation-delay: 20s;
+}
+.bubbles img:nth-child(4){
+    animation-delay: 30s;
+}
+.bubbles img:nth-child(5){
+    animation-delay: 40s;
+}
+.bubbles img:nth-child(6){
+    animation-delay: 5s;
+    width: 20px;
+}
+.bubbles img:nth-child(7){
+    animation-delay: 1s;
+    width: 35px;
+}
+
+
+.section{
+    background: rgb(222, 221, 223);
+    position: absolute;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.firstSection{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60%;
+    text-align: center;
+    display: block;
+    height: auto;
+    padding-top: 1%;
+    margin-bottom: 3%;
+}
+.heading{
+    margin-top: 40px;
+    margin-bottom: 30px;
+    font-size: 30px;
+}
+.text{
+    font-size: 20px;
+    margin-bottom: 20px;
+    opacity: 0.9;
+}
+.text a{
+    cursor: pointer;
+}
+
+
+.secondSection{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    width: 100%;
+    margin-bottom: 8%;
+}
+.textPortion{
+    width: 60%;
+    margin-right: 10px;
+}
+.imagePortion{
+    width: 30%;
+    margin-left: 10px;
+}
+.imagePortion img{
+    background-size: cover;
+    width: 100%;
+    border-radius: 35px;
+}
+.thirdSection{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    margin-bottom: 4%;
+}
+.imgPortion{
+    width: 30%;
+    margin-right: 60px;
+}
+.imgPortion img{
+    background-size: cover;
+    width: 100%;
+    border-radius: 35px;
+}
+.txtPortion{
+    width: 60%;
+    margin-left: 10px;
+    height: auto;
+}
+.fourthSection{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    margin-bottom: 3%;
+}
+.img{
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 250px;
+    margin: 0px 20px;
+}
+.img img{
+    width: 27%;
+    margin-bottom: 2%;
+}
+
+.img h2{
+    margin-bottom: 4%;
+    text-align: center;
+}
+.img p{
+    text-align: center;
+    font-size: 16px;
+}
+
+.fifthSection{
+    background: url(../image/jason-leung-Xaanw0s0pMk-unsplash.jpg) no-repeat center center fixed;
+    background-size: cover;
+    width: 100%;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    opacity: 0.95;
+}
+.fifthSection h1{
+    padding-bottom: 30px;
+    font-size: 40px;
+    color: rgb(5, 5, 5);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: bolder;
+}
+.fifthSection .btn{
+    font-size: 30px;
+    width: 300px;
+}
+
+
+.sixthSection{
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    background-color: rgb(53, 53, 54);
+    height: auto;
+    width: 100%;
+    text-align: center;
+}
+.table{
+    width: 20%;
+    margin: 20px 0px;
+}
+.table u{
+     font-size: 30px;
+    color: white;
+}
+.table ul li a{
+    text-decoration: none;
+    color: white;
+    cursor: pointer;
+}
+.table p{
+    margin-bottom: 20px;
+}
+.table ul li{
+    list-style: none;
+    font-size: 20px;
+    color: white;
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+.table ul li a:hover{
+    text-decoration: underline;
+    animation-duration: 0.5s
+}
+footer{
+    color: white;
+    background-color: black;
+    width: 100%;
+    text-align: center;
+    padding: 4px;
+}
+footer p{
+    margin-bottom: 0rem;
+}
+
+
+@media only screen and (min-width:1700px){
+    .heading{
+        font-size: 40px;
+    }
+    .text{
+        font-size: 25px;
+    }
+    .table u{
+        font-size: 50px;
+    }
+    .table u li{
+        font-size: 39px;
+    }
+    .img h2{
+        font-size: 30px;
+    }
+    .img p{
+        font-size: 20px;
+    }
+    
+}
+@media only screen and (max-width:800px) and (min-width:600px){
+
+
+
+    #heading h1{
+        font-size: 50px;
+        margin-top: 100px;
+    }
+    #para p{
+        font-size: 19px;
+    }
+    .thirdSection .txtPortion .text{
+        font-size: 18px;
+    }
+    .fourthSection{
+        margin-bottom: 0px;
+    }
+    .fifthSection h1{
+        font-size: 30px;
+    }
+    .img h2{
+        font-size: 17px;
+    }
+    .img p{
+        font-size: 12px;
+    }
+    .table{
+        margin: 20px 20px;
+    }
+    .table ul li{
+        font-size: 15px;
+    }
+}
+@media only screen and (max-width:600px){
+
+    .mycontainer {
+    
+    background-position-x: -110px;
+}
+    
+    #heading h1{
+        font-size: 35px;
+        
+    }
+    #para p{
+        font-size: 18px;
+    }
+    .fifthSection .btn{
+        width: 200px;
+        font-size: 30px;
+    }
+    .firstSection{
+        margin-bottom: 11%;
+        width: 85%;
+    }
+    .secondSection{
+        flex-direction: column-reverse;
+        margin-bottom: 12%;
+    }
+    .imagePortion{
+        width: 60%;
+    }
+    .textPortion{
+        width: 85%;
+    }
+    .thirdSection{
+        flex-direction: column;
+    }
+    .fourthSection{
+        margin-bottom: 0px;
+        flex-direction: column;
+        height: auto;
+        margin: 10% 2% ;
+    }
+    .img{
+        width: 80%;
+    }
+    .img h2{
+        font-size: 21px;
+        margin-bottom: 8%;
+    }
+    .img p{
+        font-size: 16px;
+    }
+    .imgPortion{
+        width: 60%;
+        margin-right: 0px;
+    }
+    .txtPortion{
+        width: 85%;
+        margin-left: 0px;
+    }
+    
+    .fifthSection h1{
+        font-size: 23px;
+        text-align: center;
+    }
+    
+    .sixthSection{
+        flex-direction: column;
+        align-items: center;
+    }
+    .table{
+        width: 45%;
+    }
+    .table u{
+        font-size: 31px;
+    }
+    .table ul li{
+         font-size: 16px;
+    }
+    
+}
+ 

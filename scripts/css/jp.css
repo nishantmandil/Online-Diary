@@ -1,0 +1,185 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body{
+    width: 100%;
+}
+
+
+.section{
+    display: flex;
+    flex-direction: column;
+    opacity: 0.9;
+}
+
+.firstSection{
+    background: url(../image/bg4.jpg) no-repeat center center fixed;
+    background-size: cover;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.firstSection p{
+    width: 70%;
+    font-size: 50px;
+    color: rgb(250, 248, 248);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+}
+.firstSection button{
+    color: white;
+    background-color: rgb(7, 40, 206);
+    padding: 10px 10px;
+    width: 225px;
+    font-size: 20px;
+    border-radius: 10px;
+}
+
+.secondSection{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    background-color: white;
+
+}
+.firstPart{
+    width: 60%;
+    background-color: rgb(234, 227, 240);
+    padding: 40px 40px;
+    border-radius: 45px;
+    margin-top: 40px;
+}
+.secondPart{
+    background-color: rgb(226, 9, 9);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    width: 95%;
+    border-radius: 20px;
+    margin-bottom: 7%;
+    padding: 0px 10px;
+}
+.secondPart button{
+    width: 110%;
+    color: rgb(238, 36, 36);
+    border-radius: 12px;
+    padding: 9px 0px;
+    outline: none;
+}
+.secondPart b{
+    width: 70%;
+    color: white;
+    font-size: 20px;
+    margin-right: 1%;
+}
+
+
+.secondSection h1{
+    margin-bottom: 20px;
+}
+.secondSection p{
+    margin-bottom: 20px;
+    font-size: 18px;
+}
+.secondSection ul li{
+    margin-bottom: 15px;
+    font-size: 20px;
+}
+a{
+    text-decoration: none;
+    color: rgb(80, 74, 74);
+    padding: 10px 10px;
+    border-radius: 15px;
+}
+
+.firstImage{
+    text-align: center;
+}
+
+.firstImage img{
+    background-size: cover;
+    width: 60%;
+    border-radius: 30px;
+}
+
+@media only screen and (max-width:1050px) and (min-width:870px){
+
+.firstPart{
+    width: 70%;
+}
+}
+
+@media only screen and (max-width:870px) and (min-width:650px){
+.firstPart{
+   width: 70%;
+}
+.secondPart b{
+    font-size: 15px;
+    margin-right: 0;
+}    
+.secondPart button{
+    font-size: 10px;
+}
+}
+
+@media only screen and (max-width:650px){
+    .firstPart{
+        width: 99%;
+     }
+     .secondPart b{
+         font-size: 15px;
+         margin-right: 0;
+     }    
+     .firstSection{
+         height: 220px;
+     }
+     .firstSection p{
+        font-size: 32px;
+        height: 70px;
+     }
+     .firstSection button{
+         font-size: 12px;
+         width: 160px;
+     }
+     .secondSection p{
+        font-size: 15px;
+     }
+     .secondSection h1{
+         font-size: 27px;
+     }
+    
+    .secondPart b{
+        font-size: 15px;
+        margin-right: 0;
+    }    
+    .secondSection ul li{
+        font-size: 15px;
+    }
+     .firstPart{
+         padding: 40px 20px;
+         margin-top: 5px;
+     }
+     .secondPart{
+         height: 70px;
+     }
+    .secondPart b{
+        font-size: 12px;
+        margin-right: 0;
+    }    
+    .secondPart button{
+        font-size: 10px;
+        padding: 10px 1px;
+    }
+}
